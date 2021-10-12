@@ -1,0 +1,111 @@
+body {
+  padding-top: 10px;
+  background: white;
+}
+.container {
+  display: grid;
+  width: 100%;
+  max-width: auto;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr minmax(160px, 1fr);
+  grid-gap: 0px;
+}
+/* items */
+.container .item-2 {
+  background-color: none;
+  grid-column: 2 / 4;
+  text-align: center;
+}
+.container .item-5 {
+  background-color: none;
+  grid-column: 2 / 5;
+}
+.container .item-8 {
+  background-color: none;
+  grid-column: 3 / 5;
+}
+.container .item-7 {
+  background-color: none;
+  grid-column: 3 / 5;
+}
+.container div {
+  color: rgb(17, 1, 1);
+  font-size: 20px;
+  padding: 20px;
+}
+/* specific item styles */
+.item-1 {
+  background: white;
+  height: 80px;
+}
+.item-3 {
+  background: white;
+}
+.item-4 {
+  background: white;
+}
+/*position absolute item*/
+.item-6 {
+  background: none;
+  height: 300px;
+  position: absolute;
+  left: 140px;
+  top: 350px;
+  width: 300px;
+}
+.item-7 {
+  background: none;
+  position: absolute;
+  left: 800px;
+  top: 350px;
+  height: 300px;
+  width: 690px;
+}
+.item-8 {
+  background: transparent;
+  position: absolute;
+  left: 600px;
+  top: 350px;
+  height: 300px;
+  width: 600px;
+}
+.container {
+  text-align: left;
+}
+.item-4 img {
+  max-width: 100%;
+  height: auto;
+}
+.button_container {
+  background-color: rgb(15, 12, 12);
+  padding: 10px 50px;
+  border: none;
+  color: white;
+  border-radius: 50px;
+}
+/*para la segunda imagen*/
+.imagen img {
+  width: 400px;
+  height: 300px;
+  left: 50%;
+}
+/*para el texto del item2 y item5*/
+.item-2 p {
+  word-spacing: 50pt;
+}
+.item-5 p {
+  text-align: center;
+}
+/*para modificar la imagen del item 7*/
+.item-7 {
+  position: absolute;
+  background-image: url(img/fotogrupo.png);
+  left: 730px;
+  width: 550px;
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
